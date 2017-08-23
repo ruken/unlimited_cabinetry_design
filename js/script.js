@@ -2,7 +2,6 @@
 
 var app = angular.module("computer", ['ngRoute']);
 
-
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
   when('/main', {
@@ -30,11 +29,11 @@ app.config(['$routeProvider', function($routeProvider) {
  
 }])
 
-.controller('ServicesCtrl', ['$scope','$http', function($scope, $http) {
- $http.get('services.json').then(function(response){
-   console.log(response);
- });
-}])
+// .controller('ServicesCtrl', ['$scope','$http', function($scope, $http) {
+ // $http.get('services.json').then(function(response){
+   // console.log(response);
+ // });
+// }])
 
 .controller('ContactCtrl', ['$scope', function($scope) {
  
